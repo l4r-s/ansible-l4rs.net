@@ -1,7 +1,0 @@
-bind_config_master_zones:
-  - name: l4rs.net
-  - name: admin.l4rs.net
-  - name: clients.l4rs.net
-
-#bind_config_master_allow_transfer:
-#  - 192.168.15.3
