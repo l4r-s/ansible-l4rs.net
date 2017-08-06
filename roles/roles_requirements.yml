@@ -1,0 +1,8 @@
+- src: git+https://github.com/l4r-s/ansible-common.git
+  name: common
+
+- src: git+https://github.com/l4r-s/ansible-role-pvelxc.git
+  name: lxc
+
+- src: git+https://github.com/l4r-s/ansible-role-bind.git
+  name: bind

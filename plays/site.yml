@@ -1,0 +1,16 @@
+---
+
+- name: Container setup
+  hosts: all
+  gather_facts: False
+
+  roles:
+    - { role: lxc,                      tags: ["lxc"]    }
+    - { role: common,                   tags: ["common"] }
+
+- name: Nameserver setup
+  hosts: nameserver
+  become: True
+
+  roles:
+    - { role: bind,                   tags: ["bind"] }
