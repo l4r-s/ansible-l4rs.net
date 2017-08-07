@@ -18,3 +18,4 @@ timeservers:
 
 proxmox_node: pve
 proxmox_fqdn: pve.l4rs.net
+proxmox_storage: nvme

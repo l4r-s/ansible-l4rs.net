@@ -6,6 +6,12 @@
 
   roles:
     - { role: lxc,                      tags: ["lxc"]    }
+
+- name: Common setup
+  hosts: all
+  become: True
+
+  roles:
     - { role: common,                   tags: ["common"] }
 
 - name: Nameserver setup
@@ -14,3 +20,4 @@
 
   roles:
     - { role: bind,                   tags: ["bind"] }
+    - { role: common,                   tags: ["common"] }
